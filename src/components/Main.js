@@ -5,7 +5,7 @@ import { Profile } from "./Profile";
 
 export class Main extends React.Component {
     state = {
-        playerId: nba.findPlayer("Stephen Curry").playerId,
+        playerId: nba.findPlayer("Kevin Durant").playerId,
         playerInfo: {}
     }
 
