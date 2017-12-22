@@ -4,6 +4,7 @@ import { PROFILE_PIC_URL_PREFIX, TEAM_PIC_URL_PREFIX } from '../constants';
 export class Profile extends React.Component {
     render() {
         const {
+            playerId,
             teamAbbreviation,
             teamCity,
             teamName,
@@ -17,7 +18,7 @@ export class Profile extends React.Component {
                 <div className="profile-entry player-name">{`${playerName}`}</div>
                 <img
                     className="profile-pic"
-                    src={`${PROFILE_PIC_URL_PREFIX}/${this.props.playerId}.png`}
+                    src={`${PROFILE_PIC_URL_PREFIX}/${playerId}.png`}
                     alt="Profile"
                 />
                 <div className="profile-entry">
